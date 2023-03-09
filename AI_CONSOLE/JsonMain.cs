@@ -1,7 +1,8 @@
-﻿using System.Reflection;
+﻿/*
+using System.Reflection;
 using Newtonsoft.Json;
 
-namespace AI_CONSOLE
+namespace Chat_AI.AI_CONSOLE
 {
 
 
@@ -52,3 +53,4 @@ else
     }
 }
 }
+*/
