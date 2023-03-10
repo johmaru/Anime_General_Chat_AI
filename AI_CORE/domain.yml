@@ -1,0 +1,38 @@
+version: "3.1"
+
+intents:
+
+  - greet
+  - check_time
+  - nlu_fallback
+
+entities:
+  
+  - Time
+
+slots:
+  reserv_time:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: Time
+
+responses:
+  utter_greet:
+    - text: "こんにちは！"
+  utter_checktime:
+    - text: "現在は{check_time}時です"
+  utter_default:
+    - text: "すみません。よくわかりませんでした。"
+
+forms:
+  checktime_forum:
+    required_slots:
+      - check_time
+
+actions:
+  - action_check_time
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

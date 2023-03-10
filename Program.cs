@@ -1,4 +1,5 @@
 ﻿using Chat_AI.AI_CONSOLE;
+using Chat_AI.AI_CORE;
 using Chat_AI.AI_Debug;
 using Chat_AI.SystemMain;
 using Newtonsoft.Json;
@@ -20,6 +21,10 @@ internal class Program
         JsonCore jsc = new JsonCore();
 
         jsc.Main();
+
+        gptCore gpt = new gptCore();
+
+        gpt.InitilizeAsync();
 
     }
 

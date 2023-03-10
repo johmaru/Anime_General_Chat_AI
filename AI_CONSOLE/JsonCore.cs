@@ -65,8 +65,6 @@ namespace Chat_AI.AI_CONSOLE
                             string Key = jsettings.APIKEY;
 
                             Console.WriteLine($"APIKEY[{Key}]でAIを起動します。");
-
-                            Console.ReadKey();
                         }
 
                     }

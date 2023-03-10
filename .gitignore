@@ -4,3 +4,7 @@ Chat_AI/AI_CORE/obj
 AI_CONSOLE/obj
 bin
 obj
+AI_CORE/.rasa
+AI_CORE/actions/__pycache__
+AI_CORE/venv
+venv
